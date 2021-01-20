@@ -1,5 +1,11 @@
 package stringutil
 
+import "fmt"
+
+func init() {
+	fmt.Println("init of stringutil package")
+}
+
 // Reverse returns its argument string reversed rune-wise left to right.
 func Reverse(s string) string {
 	r := []rune(s)
